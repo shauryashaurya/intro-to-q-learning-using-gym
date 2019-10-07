@@ -8,4 +8,9 @@ Also: https://github.com/openai/gym
 
 # Notes
 * Also here: https://pythonprogramming.net/q-learning-reinforcement-learning-python-tutorial/
-* q_new = (1-alpha)*q_old + alpha*q_learned
+* At time t (or at step t), q-value is a function of s (state at time t) and a (action or actions at time t):
+* q_new(time = t) = (1-alpha)*q_old + alpha*q_learned
+* q_learned = reward(time = t) + (discount_factor * estimated_optimal_future_value)
+* estimated_optimal_future_value = max (q_new(time = t+1)) for all actions at t=1
+
+
