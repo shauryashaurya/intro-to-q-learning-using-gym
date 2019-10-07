@@ -7,3 +7,5 @@ https://gym.openai.com/
 Also: https://github.com/openai/gym
 
 # Notes
+* Also here: https://pythonprogramming.net/q-learning-reinforcement-learning-python-tutorial/
+* q_new = (1-alpha)*q_old + alpha*q_learned
