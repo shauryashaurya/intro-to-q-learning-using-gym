@@ -32,7 +32,7 @@ For every action in every state the system assigns a *Q* value.
 
 "observations" for MountainCar-v0 are of the type ```[position, velocity]```
 
-[That function](https://en.wikipedia.org/wiki/Q-learning#Algorithm) from [wikipedia](https://en.wikipedia.org/wiki/Q-learning):
+[That function](https://en.wikipedia.org/wiki/Q-learning#Algorithm) from [wikipedia](https://en.wikipedia.org/wiki/Q-learning):  
 At time t (or at step t), q-value is a function of s (state at time t) and a (action or actions at time t):  
 q_new(time = t) = (1-alpha)*q_old + alpha*q_learned  
 q_learned = reward(time = t) + (discount_factor * estimated_optimal_future_value)  
