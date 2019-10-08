@@ -1,13 +1,13 @@
 # An introduction to Reinforcement Learning (specifically: Q-Learning) using OpenAI's Gym
-Notes and code following the introductory reinforcement learning tutorial from @Sentdex: https://www.youtube.com/playlist?list=PLQVvvaa0QuDezJFIOU5wDdfy4e9vdnx-7
+Notes and code following the introductory [reinforcement learning tutorial](https://www.youtube.com/playlist?list=PLQVvvaa0QuDezJFIOU5wDdfy4e9vdnx-7) from @Sentdex   
+    
+[Full text version on pythonprogramming.net](https://pythonprogramming.net/q-learning-reinforcement-learning-python-tutorial/)   
 
-## Learning reinforcement learning
-Using OpenAI's gym for an introductory exploration of RL and specifically Q-Learning.
-https://gym.openai.com/
-Also: https://github.com/openai/gym
+## Library references
+Using [OpenAI's gym](https://gym.openai.com/) for an introductory exploration of RL and specifically Q-Learning. 
+Also: [gym github repo](https://github.com/openai/gym)   
 
 ## Notes
-Also here: https://pythonprogramming.net/q-learning-reinforcement-learning-python-tutorial/   
 
 Q-Learning is a "model-free" reinforcement learning algorithm.
 
