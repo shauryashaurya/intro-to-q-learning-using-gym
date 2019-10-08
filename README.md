@@ -7,10 +7,23 @@ https://gym.openai.com/
 Also: https://github.com/openai/gym
 
 # Notes
-* Also here: https://pythonprogramming.net/q-learning-reinforcement-learning-python-tutorial/
-* At time t (or at step t), q-value is a function of s (state at time t) and a (action or actions at time t):
-* q_new(time = t) = (1-alpha)*q_old + alpha*q_learned
-* q_learned = reward(time = t) + (discount_factor * estimated_optimal_future_value)
-* estimated_optimal_future_value = max (q_new(time = t+1)) for all actions at t=1
+Also here: https://pythonprogramming.net/q-learning-reinforcement-learning-python-tutorial/
+For an environment:
+* States: Observations on the state of the agent
+* Actions: Actions that the agent performs
+* Goals: What you want the agent to achieve
+
+For OpenAI's gym MountainCar-v0 environment, humans may need to know what action means what but we'll not tell the system - it needs to figure this out by itself
+* 0 - turn left
+* 1 - stay
+* 2 - turn right
+* the 'goal' is to get to the flag
+
+__Need to learn how the environments are defined__
+
+At time t (or at step t), q-value is a function of s (state at time t) and a (action or actions at time t):
+q_new(time = t) = (1-alpha)*q_old + alpha*q_learned
+q_learned = reward(time = t) + (discount_factor * estimated_optimal_future_value)
+estimated_optimal_future_value = max (q_new(time = t+1)) for all actions at t=1
 
 
