@@ -14,13 +14,19 @@ For an environment:
 * Actions: Actions that the agent performs
 * Goals: What you want the agent to achieve  
 
-For [OpenAI's gym MountainCar-v0 environment](https://github.com/openai/gym/wiki/MountainCar-v0), humans may need to know what action means what but we'll not tell the system - it needs to figure this out by itself
+For [OpenAI's gym MountainCar-v0 environment](https://github.com/openai/gym/wiki/MountainCar-v0), humans may need to know what action means what but we'll not tell the system - it needs to figure this out by itself. This is the "action space" for MountainCar-v0:
 * 0 - push left
 * 1 - no push
 * 2 - push right
-* the 'goal' is to get to the flag
+* the 'goal' is to get to the flag or 0.5
 
 _Need to learn how the environments are defined_  
+
+The "observation space" is found through ```step()``` or ```reset()``` - when you do ```env.reset()``` it returns an initial state, then you can step through various actions and see how the state changes.
+
+For every action in every state the system assigns a *Q* value.
+
+"observations" for MountainCar-v0 are of the type ```[position, velocity]```
 
 At time t (or at step t), q-value is a function of s (state at time t) and a (action or actions at time t):  
 q_new(time = t) = (1-alpha)*q_old + alpha*q_learned

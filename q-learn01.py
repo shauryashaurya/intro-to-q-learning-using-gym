@@ -3,8 +3,11 @@ import numpy as np
 
 env = gym.make("MountainCar-v0")
 env.reset()
-print("env.observation_space.high: ", env.observation_space.high)
-print("env.observation_space.low: ", env.observation_space.low)
+
+# print the max position and max velocity possible
+print("env.observation_space.high: [position, velocity]: ", env.observation_space.high)
+# print the min position and min velocity possible
+print("env.observation_space.low:  [position, velocity]: ", env.observation_space.low)
 
 DISCREET_OS_SIZE = [20,20]
 discreet_os_win_size = (env.observation_space.high - env.observation_space.low)/DISCREET_OS_SIZE
