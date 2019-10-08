@@ -8,6 +8,7 @@ Also: https://github.com/openai/gym
 
 # Notes
 Also here: https://pythonprogramming.net/q-learning-reinforcement-learning-python-tutorial/
+
 For an environment:
 * States: Observations on the state of the agent
 * Actions: Actions that the agent performs
@@ -19,7 +20,7 @@ For OpenAI's gym MountainCar-v0 environment, humans may need to know what action
 * 2 - turn right
 * the 'goal' is to get to the flag
 
-__Need to learn how the environments are defined__
+_Need to learn how the environments are defined_
 
 At time t (or at step t), q-value is a function of s (state at time t) and a (action or actions at time t):
 q_new(time = t) = (1-alpha)*q_old + alpha*q_learned
