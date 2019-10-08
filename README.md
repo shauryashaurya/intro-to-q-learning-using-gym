@@ -14,10 +14,10 @@ For an environment:
 * Actions: Actions that the agent performs
 * Goals: What you want the agent to achieve  
 
-For OpenAI's gym MountainCar-v0 environment, humans may need to know what action means what but we'll not tell the system - it needs to figure this out by itself
-* 0 - turn left
-* 1 - stay
-* 2 - turn right
+For [OpenAI's gym MountainCar-v0 environment](https://github.com/openai/gym/wiki/MountainCar-v0), humans may need to know what action means what but we'll not tell the system - it needs to figure this out by itself
+* 0 - push left
+* 1 - no push
+* 2 - push right
 * the 'goal' is to get to the flag
 
 _Need to learn how the environments are defined_  
