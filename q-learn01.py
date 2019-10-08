@@ -1,6 +1,11 @@
 import gym
 import numpy as np
 
+# Q-Learning settings
+LEARNING_RATE = 0.1
+DISCOUNT = 0.95
+EPISODES = 25000
+
 env = gym.make("MountainCar-v0")
 env.reset()
 
@@ -16,13 +21,21 @@ print("env.observation_space.low:  [position, velocity]: ", env.observation_spac
 DISCREET_OS_SIZE = [20,20]
 # size of one bucket of [position, velocity]
 discreet_os_win_size = (env.observation_space.high - env.observation_space.low)/DISCREET_OS_SIZE
-
+# create a 3D Q-table 
+# [state (a combination of position and velocity), each action at the state]
+    ''' so:
+    pos 0, vel 0, act 0
+    pos 0, vel 0, act 1
+    pos 0, vel 0, act 2
+    pos 1, vel 0, act 0
+    pos 1, vel 0, act 1
+    pos 1, vel 0, act 2
+    pos 1, vel 1, act 0
+    pos 1, vel 1, act 1
+    pos 1, vel 1, act 2
+    ... and so on...'''
 q_table = np.random.uniform(low = -2, high = 0, size = (DISCREET_OS_SIZE + [env.action_space.n]))
 
-# Q-Learning settings
-LEARNING_RATE = 0.1
-DISCOUNT = 0.95
-EPISODES = 25000
 
 done = False
 

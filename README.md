@@ -1,12 +1,12 @@
 # An introduction to Reinforcement Learning (specifically: Q-Learning) using OpenAI's Gym
 Notes and code following the introductory reinforcement learning tutorial from @Sentdex: https://www.youtube.com/playlist?list=PLQVvvaa0QuDezJFIOU5wDdfy4e9vdnx-7
 
-# Learning reinforcement learning
+## Learning reinforcement learning
 Using OpenAI's gym for an introductory exploration of RL and specifically Q-Learning.
 https://gym.openai.com/
 Also: https://github.com/openai/gym
 
-# Notes
+## Notes
 Also here: https://pythonprogramming.net/q-learning-reinforcement-learning-python-tutorial/   
 
 Q-Learning is a "model-free" reinforcement learning algorithm.
@@ -30,7 +30,7 @@ The "observation space" is found through ```step()``` or ```reset()``` - when yo
 
 For every action in every state the system assigns a *Q* value.
 
-"observations" for MountainCar-v0 are of the type ```[position, velocity]```
+"observations" for MountainCar-v0 are of the type ```[position, velocity]``` but one should not care - IRL these may be anything, we only want to find out what "policy" (given a state, what action should the agent take) will take us to maximum reward (or goal).
 
 [That function](https://en.wikipedia.org/wiki/Q-learning#Algorithm) from [wikipedia](https://en.wikipedia.org/wiki/Q-learning):  
 At *time* t (or at *step* t), q-value is a function of s (state at time t) and a (action or actions at time t):  
