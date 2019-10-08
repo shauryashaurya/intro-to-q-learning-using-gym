@@ -3,9 +3,9 @@ Notes and code following the introductory [reinforcement learning tutorial](http
     
 [Full text version on pythonprogramming.net](https://pythonprogramming.net/q-learning-reinforcement-learning-python-tutorial/)   
 
-## Library references
-Using [OpenAI's gym](https://gym.openai.com/) for an introductory exploration of RL and specifically Q-Learning. 
-Also: [gym github repo](https://github.com/openai/gym)   
+## Library references  
+Using [OpenAI's gym](https://gym.openai.com/) for an introductory exploration of RL and specifically Q-Learning.   
+Also: [gym github repo](https://github.com/openai/gym)    
 
 ## Notes
 
